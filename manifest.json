@@ -1,8 +1,8 @@
 {
-	"name": "MyPlugin",
-	"id": "abc",
-	"api": "1.0.0",
-	"main": "dist/code.js",
-	"ui": "dist/ui.html",
-	"editorType": ["figma"]
+    "name": "MyPlugin",
+    "id": "abc",
+    "api": "1.0.0",
+    "main": "dist/code.js",
+    "ui": "dist/ui.html",
+    "editorType": ["figma"]
 }

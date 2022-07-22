@@ -5,6 +5,9 @@
     "main": "code.js",
     "scripts": {
         "watch": "webpack --mode=development --watch",
+        "format": "prettier --write .",
+        "test": "npm run test:format",
+        "test:format": "prettier --check .",
         "build": "webpack --mode=production"
     },
     "author": "Diagram",
