@@ -6,11 +6,11 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Install modules
-              run: npm ci
+              run: yarn --immutable
             - name: Run tests
-              run: npm run test
+              run: yarn test
             - name: Build Plugin
-              run: npm run build
+              run: yarn build
             - uses: actions/upload-artifact@v3
               with:
                   name: plugin
