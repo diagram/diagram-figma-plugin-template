@@ -5,9 +5,9 @@
 1. To quickly scaffold a figma plugin, get started by cloning this repo or using as a template.
 2. Locally, run in the command line, on this folder
 
-```js
-yarn;
-yarn watch
+```sh
+npm install
+npm run watch
 ```
 
 3. Navigate over to Figma
