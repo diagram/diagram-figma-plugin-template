@@ -1,19 +1,19 @@
 name: Test
 on: push
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: npm ci
-    - name: Run tests
-      run: npm run test
-    - name: Build Plugin
-      run: npm run build
-    - uses: actions/upload-artifact@v3
-      with:
-        name: plugin
-        path: |
-          dist/
-          manifest.json
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install modules
+              run: npm ci
+            - name: Run tests
+              run: npm run test
+            - name: Build Plugin
+              run: npm run build
+            - uses: actions/upload-artifact@v3
+              with:
+                  name: plugin
+                  path: |
+                      dist/
+                      manifest.json
